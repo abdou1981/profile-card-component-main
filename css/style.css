@@ -7,17 +7,15 @@ body {
   font-family: 'Kumbh Sans', sans-serif;
 }
 .card {
-  width: 1440px;
   background-color: hsl(185, 75%, 39%);
-  padding-top: 150px;
-  padding-bottom: 150px;
   position: relative;
-  overflow: hidden;
   z-index: -1;
+  min-height: 100vh;
+  overflow: hidden;
 }
-@media (max-width: 375px) {
+@media (max-width: 425px) {
   .card {
-    width: 375px;
+    width: 425px;
   }
 }
 .pattern-top {
@@ -32,7 +30,7 @@ body {
   right: -150px;
   z-index: -1;
 }
-@media (max-width: 375px) {
+@media (max-width: 425px) {
   .pattern-top {
     top: -600px;
     left: -750px;
@@ -50,12 +48,19 @@ body {
   -moz-border-radius: 10px;
   -ms-border-radius: 10px;
   -o-border-radius: 10px;
-  margin: 0 auto;
   overflow: hidden;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+  -webkit-transform: translate(-50%,-50%);
+  -moz-transform: translate(-50%,-50%);
+  -ms-transform: translate(-50%,-50%);
+  -o-transform: translate(-50%,-50%);
 }
-@media (max-width: 375px) {
+@media (max-width: 425px) {
   .box {
-    width: 300px;
+    width: 85%;
   }
   .box div:nth-child(1) img {
     width: 100%;
